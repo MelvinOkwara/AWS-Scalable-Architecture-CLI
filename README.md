@@ -5,28 +5,31 @@ This project demonstrates a highly available, scalable web infrastructure built 
 ## Project Steps
 
 ### 1. Network Foundation (VPC & Subnets)
-![VPC Setup](./1-vpc-subnets.png)
+![VPC Setup](./01-vpc-subnet-identification.png)
 
 ### 2. Security Configuration
-![Security Groups](./2-security-groups.png)
+![Security Groups](./02-security-groups-creation.png)
 
 ### 3. Instance Bootstrapping
-![User Data Script](./3-userdata.png)
+![User Data Script](./03-web-server-provisioning-script.png)
 
 ### 4. Launch Template
-![Launch Template](./4-launch-template.png)
+![Launch Template](./04-ec2-launch-template.png)
 
 ### 5. Target Group Setup
-![Target Group](./5-target-group.png)
+![Target Group](./05-target-group-arn-setup.png)
 
-### 6. Auto Scaling Group (ASG)
-![Auto Scaling Group](./7-asg-creation.png)
+### 6. Load Balancer Setup
+![Load Balancer](./06-application-load-balancer-creation.png)
 
-### 7. Scaling Policies
-![Scaling Policy](./8-scaling-policy.png)
+### 7. Auto Scaling Group (ASG)
+![Auto Scaling Group](./07-auto-scaling-group-initialization.png)
 
-### 8. Content Delivery (CloudFront)
-![CloudFront](./9-cloudfront-config.png)
+### 8. Scaling Policies
+![Scaling Policy](./08-cpu-scaling-policy-configuration.png)
 
-### 9. Final Verification
-![Final Output](./10-final-output.png)
+### 9. Content Delivery (CloudFront)
+![CloudFront](./09-cloudfront-global-cdn-deployment.png)
+
+### 10. Final Verification
+![Final Output](./10-live-verification-cdn-url.png)
