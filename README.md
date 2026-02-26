@@ -42,4 +42,16 @@ Created an ASG linked to the Launch Template and Target Group, ensuring the syst
 ![Auto Scaling Group](./07-auto-scaling-group-initialization.png)
 
 ### 8. Dynamic Scaling Policy
-Implemented a Target Tracking Scaling Policy. The ASG will automatically add or remove instances to keep the average C
+Implemented a Target Tracking Scaling Policy. The ASG will automatically add or remove instances to keep the average CPU utilization at 50%.
+![Scaling Policy](./08-cpu-scaling-policy-configuration.png)
+
+### 9. Global Content Delivery (CloudFront)
+Provisioned a CloudFront Distribution with the ALB as the origin to cache content at edge locations globally, improving performance.
+![CloudFront](./09-cloudfront-global-cdn-deployment.png)
+
+### 10. Live Verification
+The final application is accessed via the CloudFront URL. The output confirms that the Load Balancer is successfully cycling through different hostnames as instances scale.
+![Final Output](./10-live-verification-cdn-url.png)
+
+---
+*Created by Melvin Okwara - AWS Cloud Project*
